@@ -1,0 +1,155 @@
+/* General Rules */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+:root{
+    --color-monkeys: #f7ba26;
+}
+
+body{
+    font-family: Roboto;
+}
+
+/* Movil Version */
+
+header{
+    background-color: gray;
+    height: 10dvh
+}
+
+.header-monkey{
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    padding: 5px 2vw 5px 2vw;
+}
+
+.header-monkey-icon{
+    height: 100%;
+}
+
+.header-monkey-icon a img{
+    width: 23dvw;
+}
+
+.second-part-header{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-content: center;
+}
+
+.pedido-header{
+    display: none;
+}
+
+.reselva-header{
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 5px;
+    border-radius: 30px;
+    background-color: var(--color-monkeys);
+    width: 180px;
+}
+
+.reselva-header a{
+    text-decoration: none;
+    color: black;
+}
+
+.toggle-menu{
+    display: flex;
+    flex-direction: row;
+    width: 25px;
+    height: 34px;
+    align-self: center;
+    position: relative;
+}
+
+.point{
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+}
+
+.point svg{
+    fill: var(--color-monkeys);
+    align-self: center;
+}
+
+.menu-toggle{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.check{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.menu-nav{
+    display: none;
+}
+
+.close-menu-toggle{
+    width: 30px;
+}
+.close-menu-toggle svg{
+    width: 30px;
+    fill: gray;
+}
+
+body:has(#menu-toggle:checked) .menu-nav{
+    display: flex;
+    height: 100dvh;
+    width: 100dvw;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+}
+
+body:has(#menu-toggle:checked) .menu-flex-header{
+    align-self: center;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    gap: 20px;
+    list-style: none;
+    width: 100vw;
+}
+
+.menu-flex-header li{
+    align-self: center;
+}
+
+.menu-flex-header a{
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: var(--color-monkeys);
+}
+
+.divider{
+    align-self: center;
+    height: 1.5px;
+    width: 80%;
+    background: var(--color-monkeys);
+}
+
+body:has(#menu-toggle:checked) .close-div{
+    position: absolute;
+    right: 2px;
+}
