@@ -606,3 +606,138 @@ main{
     width: 100px;
 }
 
+.comments-monkey{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.marta-container{
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    gap: 10px;
+}
+
+.header-marta{
+    display: flex;
+    
+    width: 100%;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.div-profile{
+    display: flex;
+    gap: 20px;
+}
+
+.header-marta img{
+    width: 30px;
+    height: 30px;
+}
+
+.header-marta p{
+    align-self: center;
+}
+
+.header-marta svg{
+    width: 20px;
+    height: 20px;
+    text-align: left;
+}
+
+.stars-verified{
+    display: flex;
+}
+
+.stars-verified i{
+    align-self: center;
+    color: orange;
+}
+
+.stars-verified img{
+    margin-left: 10px;
+    align-self: center;
+    width: 20px;
+}
+
+.resena-section{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.resena-section h2{
+    color: white;
+    align-self: center;
+}
+
+.location-resena{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.location-resena div{
+    width: 140px;
+    background-color: var(--color-monkeys);
+    padding: 5px 10px 5px 10px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.location-resena div a{
+    text-decoration: none;
+    align-self: center;
+    color: black;
+
+}
+
+.looking-job{
+    display: flex;
+    background-color: white;
+    height: 273px;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.looking-job div:first-child{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.looking-job p{
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.looking-job a{
+    color: var(--color-monkeys);
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.looking-job a:hover{
+    color: black;
+}
+
+.looking-job div:last-child{
+    width: 280px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.looking-job img{
+    width: 316px;
+    height: 100%;
+    transform: translateX(-30px);
+}
