@@ -174,7 +174,7 @@ main{
     position: relative;
     display: flex;
     flex-direction: column;
-    height: 650px;
+    height: 150vw;
 }
 
 .image-cover-main a img{
@@ -183,32 +183,21 @@ main{
     z-index: -1;
 }
 
-.ver-mas-buttom{
-    position: absolute;
-    bottom: -30px;
-    align-self: center;
-    background-color: var(--color-monkeys);
-    width: 80px;
-    display: flex;
-    padding: 3px;
-    justify-content: center;
-    border-radius: 40px;
-}
-
 .text-main-com{
     display: flex;
     flex-direction: column;
-    width: 396px;
+    width: 75vw;
     font-family: montserrat;
     position: absolute;
-    top: 300px;
-    right: 10px;
+    top: 65vw;
+    right: 2vw;
 }
 
 .title-main{
+    align-self: end;
     display: grid;
-    grid-template-columns: 75px 15px 55px 251px;
-    grid-template-rows: 10px 90px 95px;
+    grid-template-columns: 15vw 3vw 12vw 45vw;
+    grid-template-rows: 2.5vw 17vw 18vw;
 }
 
 .title-main p{
@@ -221,7 +210,7 @@ main{
 }
 
 .grid-1 p{
-    font-size: 10px;
+    font-size: 2vw;
     color: white;
     font-weight: 100;
 }
@@ -234,7 +223,7 @@ main{
 
 .grid-2 p{
     align-self: center;
-    font-size: 5.7rem;
+    font-size: 18vw;
     color: red;
 }
 
@@ -243,13 +232,13 @@ main{
     grid-row: 1 / 3;
     grid-column: 2 / 3;
     display: flex;
-    padding-bottom: 30px;
 }
 
 .grid-3 p{
     align-self: center;
-    font-size: 4rem;
+    font-size: 13vw;
     color: red;
+    padding-bottom: 6vw;
     
 }
 
@@ -265,20 +254,20 @@ main{
 }
 
 .grid-4 p{
-    font-size: 1.4rem;
-    height: 24px;
+    font-size: 4.4vw;
+    height: 5vw;
     color: red;
 } 
 
 .grid-4 p:first-child{
-    font-size: 3.4rem;
-    height: 60px;
+    font-size: 11vw;
+    height: 12vw;
 }
 
 .grid-4 p:last-child{
     color: white;
     font-weight: 100;
-    font-size: 1rem;
+    font-size: 3vw;
     align-self: center;
 }
 
@@ -291,7 +280,7 @@ main{
 
 .grid-5 p{
     align-self: center;
-    font-size: 7rem;
+    font-size: 21vw;
     color: white;
 }
 
@@ -303,16 +292,17 @@ main{
 
 .grid-6 p{
     align-self: center;
-    font-size: 6.5rem;
+    font-size: 19.5vw;
     color: var(--color-monkeys);
 }
 
 .lunes-jueves{
     color: white;
     align-self: end;
-    font-size: 1.6rem;
+    font-size: 6vw;
     font-weight: 800;
     font-family: "Bebas Neue";
+    height: 6vw;
 }
 
 .lunes-jueves strong{
@@ -322,7 +312,8 @@ main{
 .incluye{
     color: var(--color-monkeys);
     align-self: end;
-    font-size: 1.6rem;
+    font-size: 6vw;
+    height: 6vw;
     font-weight: 800;
     font-family: "Bebas Neue";
 }
@@ -330,13 +321,32 @@ main{
 .sandwich{
     color: white;
     align-self: end;
-    font-size: 1.1rem;
+    font-size: 4vw;
+    height: 5vw;
 }
 
 .elige{
     color: var(--color-monkeys);
     align-self: end;
-    font-size: 1.1rem;
+    font-size: 4vw;
+    height: 5vw;
+}
+
+.ver-mas-buttom{
+    position: absolute;
+    bottom: 10vw;
+    align-self: center;
+    background-color: var(--color-monkeys);
+    width: 80px;
+    display: flex;
+    padding: 3px;
+    justify-content: center;
+    border-radius: 40px;
+}
+
+.ver-mas-buttom a{
+    text-decoration: none;
+    color: black;
 }
 
 /* Monkeys Section */
@@ -362,10 +372,7 @@ main{
     width: 90vw;
 }
 
-.monkey-1-section,
-.monkey-2-section,
-.monkey-3-section,
-.monkey-4-section{
+.monkey-1-section{
     width: 90vw;
     height: 90vw;
     position: relative;
@@ -375,22 +382,10 @@ main{
     position: absolute;
 }
 
-.monkey-2-section a img{
-    position: absolute;
-}
-
-.monkey-3-section a img{
-    position: absolute;
-}
-
-.monkey-4-section a img{
-    position: absolute;
-}
-
 .inside-container{
     position: absolute;
     z-index: 2;
-    top: 300px;
+    top: 60vw;
     color: white;
 }
 
@@ -424,7 +419,7 @@ main{
 
 .monkey-1-section:hover .inside-container{
     transition: 500ms;
-    top: 250px;
+    top: 45vw;
 }
 
 .monkey-1-section:hover .inside-container p{
@@ -434,53 +429,10 @@ main{
 .monkey-1-section:hover .inside-container .arrow-right{
     opacity: 1;
     transition: 500ms ;
-    transform: translateX(180px);
+    transform: translateX(35vw);
 }
 
-.monkey-2-section:hover .inside-container{
-    transition: 500ms;
-    top: 250px;
-}
-
-.monkey-2-section:hover .inside-container p{
-    opacity: 1;
-}
-
-.monkey-2-section:hover .inside-container .arrow-right{
-    opacity: 1;
-    transition: 500ms ;
-    transform: translateX(180px);
-}
-
-.monkey-3-section:hover .inside-container{
-    transition: 500ms;
-    top: 250px;
-}
-
-.monkey-3-section:hover .inside-container p{
-    opacity: 1;
-}
-
-.monkey-3-section:hover .inside-container .arrow-right{
-    opacity: 1;
-    transition: 500ms ;
-    transform: translateX(180px);
-}
-
-.monkey-4-section:hover .inside-container{
-    transition: 500ms;
-    top: 250px;
-}
-
-.monkey-4-section:hover .inside-container p{
-    opacity: 1;
-}
-
-.monkey-4-section:hover .inside-container .arrow-right{
-    opacity: 1;
-    transition: 500ms ;
-    transform: translateX(180px);
-}
+/* donde-monkey Section */
 
 @keyframes balance{
     from {
@@ -899,6 +851,11 @@ footer{
     display: flex;
     gap: 10px;
     justify-content: center;
+}
+
+.nav-footer a{
+    text-decoration: none;
+    color: black;
 }
 
 .copy-footer{
