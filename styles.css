@@ -20,8 +20,8 @@ body{
 /* Header */
 
 header{
-    /* background-color: black; */
-    height: 10dvh;
+    background: #000305;
+    background: linear-gradient(180deg,rgba(0, 3, 5, 1) 0%, rgba(3, 0, 0, 1) 29%, rgba(8, 0, 0, 0) 100%);
     position: fixed;
     z-index: 99;
     width: 100vw;
@@ -740,4 +740,169 @@ main{
     width: 316px;
     height: 100%;
     transform: translateX(-30px);
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 10px 10px 10px;
+    gap: 20px;
+    
+}
+
+.footer-first{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-bottom: 100px;
+}
+
+.restaurants-food{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.restaurants-food div:first-child{
+    color: var(--color-monkeys);
+    font-size: 1.8rem;
+}
+
+.restaurants-food ul{
+    list-style: none;
+}
+
+.whi-ul{
+    color: white;
+}
+
+.ye-ul{
+    color: var(--color-monkeys);
+}
+
+.contacto-footer{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contacto-footer div:first-child{
+    color: var(--color-monkeys);
+}
+
+.inside-contacto{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.inside-contacto ul{
+    list-style: none;
+}
+
+.social-footer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+}
+
+.social-footer div:first-child{
+    color: var(--color-monkeys);
+}
+
+.social-ul{
+    display: flex;
+}
+
+.social-ul ul{
+    list-style: none;
+    display: flex;
+    align-content: center;
+    gap: 5px;
+}
+.social-ul li{
+    position: relative;
+    border: 1px white solid;
+    border-radius: 100px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+}
+
+.blue-hover:hover{
+    background-color: rgb(48, 112, 191);
+}
+
+.sky-hover:hover{
+    background-color: rgb(84, 134, 196);
+}
+
+.dark-hover:hover{
+    background-color: rgb(40, 41, 43);
+}
+
+.red-hover:hover{
+    background-color: rgb(214, 75, 75);
+}
+
+.social-ul svg{
+    width: 20px;
+    fill: white;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    z-index: 2;
+}
+
+.logo-footer{
+    position: absolute;
+    right: 0;
+}
+
+.logo-footer img{
+    width: 150px;
+}
+
+
+
+.second-footer{
+    background-color: white;
+    padding: 20px;
+}
+
+.payments-footer{
+    padding: 0px 0px 10px 0px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.payments-footer div{
+    display: flex;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgb(208, 208, 208);
+}
+
+.payments-footer svg{
+    width: 40px;
+    fill: rgb(105, 105, 105);
+}
+
+.payments-footer svg:hover{
+    fill: black;
+}
+
+.nav-footer ul{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.copy-footer{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
 }
