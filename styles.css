@@ -170,7 +170,7 @@ body:has(#menu-toggle:checked) .close-div{
 /* Main */
 
 main{
-    padding-top: 70px;
+    padding-top: 10dvh;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -344,6 +344,10 @@ main{
     border-radius: 40px;
 }
 
+.ver-mas-buttom:hover{
+    background-color: white;
+}
+
 .ver-mas-buttom a{
     text-decoration: none;
     color: black;
@@ -378,6 +382,18 @@ main{
     position: relative;
 }
 
+.monkey-1-section .hover-yellow{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 4;
+}
+
+.hover-yellow:hover{
+    background-color: rgba(234, 255, 1, 0.282);
+}
+
 .monkey-1-section a img{
     position: absolute;
 }
@@ -385,12 +401,12 @@ main{
 .inside-container{
     position: absolute;
     z-index: 2;
-    top: 60vw;
+    top: 60%;
     color: white;
 }
 
 .inside-container h2{
-    font-size: 2.5rem;
+    font-size: 7vw;
     text-align: center
 }
 
@@ -419,7 +435,7 @@ main{
 
 .monkey-1-section:hover .inside-container{
     transition: 500ms;
-    top: 45vw;
+    top: 45%;
 }
 
 .monkey-1-section:hover .inside-container p{
@@ -429,7 +445,7 @@ main{
 .monkey-1-section:hover .inside-container .arrow-right{
     opacity: 1;
     transition: 500ms ;
-    transform: translateX(35vw);
+    transform: translate(35vw, 10vw);
 }
 
 /* donde-monkey Section */
@@ -459,6 +475,8 @@ main{
     align-self: center;
 }
 
+/* Location Section */
+
 .location-section{
     display: flex;
     flex-direction: column;
@@ -483,7 +501,7 @@ main{
 
 .background-img img{
     width: 90vw;
-    transform: translateY(-70px);
+    transform: translateY(-14vw);
 }
 
 .icon-monkey{
@@ -492,7 +510,7 @@ main{
 }
 
 .icon-monkey img{
-    width: 110px;
+    width: 22vw;
 }
 
 .city{
@@ -501,7 +519,7 @@ main{
 
 .city h2{
     color: var(--color-monkeys);
-    font-size: 3rem;
+    font-size: 12vw;
 }
 
 .buttom-location{
@@ -572,11 +590,13 @@ main{
     border-radius: 10px;
     padding: 20px;
     gap: 10px;
+    height: 25dvh;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .header-marta{
     display: flex;
-    
     width: 100%;
     flex-wrap: nowrap;
     flex-direction: row;
@@ -618,6 +638,12 @@ main{
     width: 20px;
 }
 
+.marta-container div:last-child{
+    font-size: 1rem;
+}
+
+/* Resena Section */
+
 .resena-section{
     margin-top: 40px;
     display: flex;
@@ -637,12 +663,26 @@ main{
 }
 
 .location-resena div{
-    width: 140px;
+    width: 27vw;
     background-color: var(--color-monkeys);
     padding: 5px 10px 5px 10px;
     border-radius: 20px;
     display: flex;
     justify-content: center;
+    cursor: pointer;
+}
+
+.location-resena div img{
+    width: 30px;
+    display: none;
+}
+
+.location-resena div:hover img{
+    display: block;
+}
+
+.location-resena div:hover{
+    background-color: white;
 }
 
 .location-resena div a{
@@ -862,4 +902,117 @@ footer{
     margin-top: 40px;
     display: flex;
     justify-content: center;
+}
+
+/* Tablet Version 550px */
+
+@media  (min-width: 600px) {
+    main{
+        height: 80vw;
+    }
+
+    .monkeys-section{
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .monkey-1-section{
+        width: 40vw;
+        height: 40vw;
+    }
+
+    .monkeys-section div a img{
+        width: 40vw;
+    }
+
+    .monkeys-section div{
+        align-self: start;
+        margin: 0;
+    }
+
+    .monkey-1-section:hover .inside-container .arrow-right{
+        opacity: 1;
+        transition: 500ms ;
+        transform: translate(15vw, 1vw);
+    }
+
+    .img-min-600{
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .text-main-com{
+        top: 100px;
+    }
+
+    .title-main{
+        grid-template-columns: 10vw 2vw 7vw 30vw;
+        grid-template-rows: 1.5vw 11vw 12vw;
+    }
+
+    .grid-1 p{
+        font-size: 1.2vw;
+    }
+
+    .grid-2 p{
+        font-size: 12vw;
+    }
+
+    .grid-3 p{
+        font-size: 8vw;
+        padding-bottom: 4vw;
+    }
+
+    .grid-4 p{
+        font-size: 2.5vw;
+        height: 3vw;
+        text-align: center;
+    }
+
+    .grid-4 p:first-child{
+        font-size: 7vw;
+        height: 8vw;
+    }
+
+
+    .grid-4 p:last-child{
+        font-size: 1.8vw;
+        text-align: center;
+    }
+
+    .grid-5 p{
+        font-size: 14vw;
+    }
+
+    .grid-6 p{
+        font-size: 12.8vw;
+    }
+
+    .lunes-jueves{
+        font-size: 3vw;
+        height: 3vw;
+    }
+
+    .incluye{
+        font-size: 3vw;
+        height: 3vw;
+    }
+
+    .sandwich{
+        font-size: 2.5vw;
+        height: 3vw;
+    }
+
+    .elige{
+        font-size: 2vw;
+        height: 3vw;
+    }
+
+    .ver-mas-buttom{
+        top: 45vw;
+        
+    }
 }
