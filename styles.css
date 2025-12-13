@@ -105,7 +105,17 @@ header{
 }
 
 .menu-nav{
-    display: none;
+    position: relative;
+    visibility: hidden;
+    display: flex;
+    height: 100dvh;
+    width: 100dvw;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: black;
 }
 
 .close-menu-toggle{
@@ -121,17 +131,9 @@ body:has(#menu-toggle:checked) {
 }
 
 body:has(#menu-toggle:checked) .menu-nav{
-    display: flex;
-    height: 100dvh;
-    width: 100dvw;
-    justify-content: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 999;
-    background-color: black;
-    
+    visibility: visible;
 }
+
 
 body:has(#menu-toggle:checked) .menu-flex-header{
     align-self: center;
@@ -366,6 +368,7 @@ main{
     align-self: center;
     margin-bottom: 40px;
     position: relative;
+    transition: margin 0.3s ease;
 }
 
 .monkeys-section div:last-child{
@@ -374,6 +377,7 @@ main{
 
 .monkeys-section div a img{
     width: 90vw;
+    transition: width 0.3s ease;
 }
 
 .monkey-1-section{
@@ -391,7 +395,7 @@ main{
 }
 
 .hover-yellow:hover{
-    background-color: rgba(234, 255, 1, 0.282);
+    background-color: #ffb3001a;
 }
 
 .monkey-1-section a img{
@@ -399,54 +403,68 @@ main{
 }
 
 .inside-container{
-    position: absolute;
+    position: relative;
     z-index: 2;
-    top: 60%;
+    width: 100%;
+    height: 100%;
+    /* top: 60%; */
     color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .inside-container h2{
-    font-size: 7vw;
-    text-align: center
+    font-size: 9vw;
+    margin-top: 80%;
+    text-align: center;
+    transition: 500ms ease-in-out;
 }
 
 .inside-container p{
+    font-size: 3.5VW;
     text-align: center;
     opacity: 0;
+    transition: 500ms ease-in-out;
 }
 
-.arrow-right{
+.arrow-right {
     display: flex;
     background-color: white;
-    border-radius: 60px;
+    border-radius: 50%;
     justify-content: center;
-    align-content: center;
-    width: 40px;
-    height: 40px;
-    top: 20px;
-    left: 45%;
+    align-items: center; 
+    width: 10%;
+    aspect-ratio: 1 / 1; 
     opacity: 0;
+    transition: 500ms;
+    cursor: pointer; 
 }
 
 .arrow-right svg{
-    width: 35px;
+    width: 70%;
     fill: var(--color-monkeys);
 }
 
-.monkey-1-section:hover .inside-container{
-    transition: 500ms;
-    top: 45%;
+.monkey-1-section:hover .inside-container h2{
+    transform: translateY(-150%);
 }
 
 .monkey-1-section:hover .inside-container p{
     opacity: 1;
+    transform: translateY(-400%);
+}
+
+.monkey-1-section:hover .inside-container .dif-inside{
+    opacity: 1;
+    transform: translateY(-180%);
 }
 
 .monkey-1-section:hover .inside-container .arrow-right{
     opacity: 1;
-    transition: 500ms ;
-    transform: translate(35vw, 10vw);
+    transform: translate(400%, -100%);
 }
+
 
 /* donde-monkey Section */
 
@@ -531,11 +549,11 @@ main{
     background-color: var(--color-monkeys);
     padding: 5px 30px 5px 30px;
     border-radius: 30px;
+    transition: background-color 400ms;
 }
 
 .buttom-location div:hover{
-    background-color: white;
-    transition: 300ms;
+    background-color: white; 
     cursor: pointer;
 }
 
@@ -674,11 +692,12 @@ main{
 
 .location-resena div img{
     width: 30px;
-    display: none;
+    visibility: hidden;
+    transform: translateX(30%);
 }
 
 .location-resena div:hover img{
-    display: block;
+    visibility: visible;
 }
 
 .location-resena div:hover{
@@ -686,10 +705,15 @@ main{
 }
 
 .location-resena div a{
+    transform: translateX(35%);
     text-decoration: none;
     align-self: center;
     color: black;
+    transition: 250ms ease-in-out;
+}
 
+.location-resena div:hover a{
+    transform: translateX(10%);
 }
 
 .looking-job{
@@ -907,35 +931,11 @@ footer{
 /* Tablet Version 550px */
 
 @media  (min-width: 600px) {
+
+/* Main section */
+
     main{
         height: 80vw;
-    }
-
-    .monkeys-section{
-        justify-content: center;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 30px;
-    }
-
-    .monkey-1-section{
-        width: 40vw;
-        height: 40vw;
-    }
-
-    .monkeys-section div a img{
-        width: 40vw;
-    }
-
-    .monkeys-section div{
-        align-self: start;
-        margin: 0;
-    }
-
-    .monkey-1-section:hover .inside-container .arrow-right{
-        opacity: 1;
-        transition: 500ms ;
-        transform: translate(15vw, 1vw);
     }
 
     .img-min-600{
@@ -1013,6 +1013,103 @@ footer{
 
     .ver-mas-buttom{
         top: 45vw;
-        
     }
+
+/*  monkeys-section tablet  */
+    .monkeys-section{
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin: 0 4vw 0 4vw;
+    }
+
+    .monkey-1-section{
+        width: 40vw;
+        height: 40vw;
+    }
+
+    .monkeys-section div a img{
+        width: 40vw;
+    }
+
+    .monkeys-section div{
+        align-self: center;
+        margin: 0;
+    }
+
+    .monkeys-section div a img{
+        max-width: 480px;
+    }
+
+    .monkey-1-section{
+        max-width: 480px;
+        max-height: 480px;
+    }
+
+    .inside-container h2{
+        font-size: 5vw;
+        margin-top: 80%;
+    }
+
+    .inside-container p{
+        font-size: 1.8VW;
+        text-align: center;
+        margin: 0 30px 0 30px;
+    }
+
+    .arrow-right {
+        width: 12%;
+    }
+
+    .monkey-1-section:hover .inside-container h2{
+    transform: translateY(-140%);
+    }
+
+    .monkey-1-section:hover .inside-container p{
+        opacity: 1;
+        transform: translateY(-160%);
+    }
+
+    .monkey-1-section:hover .inside-container .dif-inside{
+        opacity: 1;
+        transform: translateY(-160%);
+    }
+
+    .monkey-1-section:hover .inside-container .monkeys-table-fix{
+        opacity: 1;
+        transform: translateY(-330%);
+    }
+
+    .monkey-1-section:hover .inside-container .arrow-right{
+        opacity: 1;
+        transform: translate(330%, -120%);
+    }
+
+    .monkey-1-section:hover .inside-container .last-fix{
+        transform: translate(330%, -90%);
+    }
+}
+
+/* 1200px Desktop */
+
+@media  (min-width: 1200px) {
+
+/* monkeys-section  */
+
+    .inside-container h2{
+        font-size: 3.4rem;
+        margin-top: 80%;
+    }
+
+    .inside-container p{
+        font-size: 1.35rem;
+        text-align: center;
+        margin: 0 30px 0 30px;
+    }
+
+    .arrow-right {
+        width: 12%;
+    }
+
 }
