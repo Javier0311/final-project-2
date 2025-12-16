@@ -433,7 +433,7 @@ main{
     transition: 500ms ease-in-out;
 }
 
-.arrow-right {
+.monkey-1-section .inside-container .arrow-right {
     display: flex;
     background-color: white;
     border-radius: 50%;
@@ -496,6 +496,9 @@ main{
 .question-donde{
     color: white;
     align-self: center;
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 30px;
 }
 
 /* Location Section */
@@ -687,6 +690,7 @@ main{
 
 .location-resena div{
     width: 27vw;
+    max-width: 178px;
     background-color: var(--color-monkeys);
     padding: 5px 10px 5px 10px;
     border-radius: 20px;
@@ -710,7 +714,7 @@ main{
 }
 
 .location-resena div a{
-    transform: translateX(35%);
+    transform: translateX(25%);
     text-decoration: none;
     align-self: center;
     color: black;
@@ -766,7 +770,7 @@ main{
 footer{
     display: flex;
     flex-direction: column;
-    padding: 40px 10px 10px 10px;
+    padding: 40px 0px 10px 0px;
     gap: 20px;
     
 }
@@ -775,7 +779,7 @@ footer{
     display: flex;
     flex-direction: column;
     gap: 30px;
-    padding-bottom: 100px;
+    padding: 20px 15px 100px 15px;
 }
 
 .restaurants-food{
@@ -834,6 +838,7 @@ footer{
 
 .social-footer div:first-child{
     color: var(--color-monkeys);
+    width: 50vw;
 }
 
 .social-ul{
@@ -890,7 +895,7 @@ footer{
 }
 
 .logo-footer img{
-    width: 150px;
+    width: 100px;
 }
 
 
@@ -1118,6 +1123,7 @@ footer{
         display: flex;
         overflow: hidden;
         width: 30%;
+        max-width: 360px;
     }
 
     .background-img{
@@ -1128,6 +1134,7 @@ footer{
 
     .icon-monkey img{
         width: 12vw;
+        max-width: 144px;
     }
 
     .background-img img{
@@ -1160,6 +1167,7 @@ footer{
     }
 
     .social-footer div:first-child{
+        width: 100%;
         font-size: 1.7rem;
         font-weight: 300;
         line-height: 1;
@@ -1205,6 +1213,10 @@ footer{
         background-color: white;
         cursor: pointer;
     }
+
+    .question-donde{
+        font-size: 3rem;
+    }
     
 }
 
@@ -1229,4 +1241,35 @@ footer{
         width: 12%;
     }
 
+    .city h2{
+        font-size: 4rem;
+    }
+
+    .footer-first{
+        gap: 50px;
+        margin: 0;
+    }
+
+    .restaurants-food{
+        width: 25vw;
+        order: 2;
+    }
+
+    .contacto-footer{
+        width: 15vw;
+        order: 3;
+    }
+
+    .social-footer{
+        width: 20vw;
+        order: 4;
+    }
+
+    .logo-footer-hide{
+        width: 12vw;
+        order: 1;
+    }
+    .logo-footer-hide img{
+        width: 12vw;
+    }
 }
