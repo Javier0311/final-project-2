@@ -66,6 +66,11 @@ header{
     width: 180px;
 }
 
+.reselva-header:hover{
+    background-color: white;
+    cursor: pointer;
+}
+
 .reselva-header a{
     text-decoration: none;
     color: black;
@@ -558,7 +563,7 @@ main{
 }
 
 .chillad-section{
-    margin-top: 100px;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
 }
@@ -802,6 +807,10 @@ footer{
     gap: 30px;
 }
 
+.class-contacto{
+    font-size: 1.8rem;
+}
+
 .contacto-footer div:first-child{
     color: var(--color-monkeys);
 }
@@ -844,6 +853,10 @@ footer{
     width: 30px;
     height: 30px;
     display: flex;
+}
+
+.logo-footer-hide{
+    display: none;
 }
 
 .blue-hover:hover{
@@ -935,7 +948,7 @@ footer{
 /* Main section */
 
     main{
-        height: 80vw;
+        height: 75vw;
     }
 
     .img-min-600{
@@ -1089,6 +1102,110 @@ footer{
     .monkey-1-section:hover .inside-container .last-fix{
         transform: translate(330%, -90%);
     }
+
+/* Location Section */
+
+    .location-section{
+        flex-direction: row;
+        gap: 20px;
+        height: 485px;
+        justify-content: center;
+        align-content: center;
+        width: 100vw;
+    }
+
+    .sevilla-location{
+        display: flex;
+        overflow: hidden;
+        width: 30%;
+    }
+
+    .background-img{
+        height: 100%;
+        width: 100%;
+
+    }
+
+    .icon-monkey img{
+        width: 12vw;
+    }
+
+    .background-img img{
+        width: 420px;
+        transform: translate(-15%, 0);  
+    }
+
+    .city h2{
+        font-size: 8vw;
+    }
+
+    .footer-first{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 80px 20px;
+        margin: 10px 2vw;
+        justify-content: center;
+    }
+
+    .restaurants-food{
+        width: 35vw;
+    }
+
+    .contacto-footer{
+        width: 35vw;
+    }
+
+    .social-footer{
+        width: 35vw;
+    }
+
+    .social-footer div:first-child{
+        font-size: 1.7rem;
+        font-weight: 300;
+        line-height: 1;
+    }
+
+    .logo-footer{
+        display: none;
+    }
+
+    .logo-footer-hide{
+        display: block;
+        width: 35vw;
+    }
+
+    .logo-footer-hide img{
+        width: 90px;
+    }
+
+}
+
+/* 850px Header act */
+
+@media (min-width: 850px){
+    .pedido-header{
+        display: flex;
+        align-self: center;
+        justify-self: center;
+        justify-content: center;
+        width: 200px;
+        padding: 5px;
+        border: var(--color-monkeys) 1px solid;
+        border-radius: 30px;
+    }
+
+    .pedido-header a{
+        align-self: center;
+        text-align: center;
+        text-decoration: none;
+        color: var(--color-monkeys);
+    }
+
+    .pedido-header:hover{
+        background-color: white;
+        cursor: pointer;
+    }
+    
 }
 
 /* 1200px Desktop */
