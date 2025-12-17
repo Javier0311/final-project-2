@@ -125,6 +125,7 @@ header{
 
 .close-menu-toggle{
     width: 30px;
+    cursor: pointer;
 }
 .close-menu-toggle svg{
     width: 30px;
@@ -166,6 +167,7 @@ body:has(#menu-toggle:checked) .menu-flex-header{
     align-self: center;
     height: 1.5px;
     width: 80%;
+    max-width: 540px;
     background: var(--color-monkeys);
 }
 
@@ -605,7 +607,7 @@ main{
 /* Comments monkey Section */
 
 .comments-monkey{
-    max-width: 1000px;
+    max-width: auto;
     margin: 0 auto;
     padding: 20px;
     overflow: hidden;
@@ -617,8 +619,7 @@ main{
     scroll-snap-type: x mandatory;
     -ms-overflow-style: none;
     scrollbar-width: none;
-    /* gap: 30px; */
-    justify-content: center;
+    gap: 30px;
 }
 
 .comments-container::-webkit-scrollbar {
@@ -880,9 +881,6 @@ footer{
     display: flex;
 }
 
-.logo-footer-hide{
-    display: none;
-}
 
 .blue-hover:hover{
     background-color: rgb(48, 112, 191);
@@ -918,7 +916,14 @@ footer{
     width: 100px;
 }
 
+.logo-footer-hide{
+    display: none;
+}
 
+.become-div, 
+.work-div{
+    display: none;
+}
 
 .second-footer{
     background-color: white;
@@ -1170,7 +1175,7 @@ footer{
         flex-direction: row;
         flex-wrap: wrap;
         gap: 80px 20px;
-        margin: 10px 2vw;
+        margin: 10px 0;
         justify-content: center;
     }
 
@@ -1265,23 +1270,6 @@ footer{
         font-size: 4rem;
     }
 
-    /* .comments-container{
-        display: flex;
-        justify-content: center;
-        gap: 1em;
-    }
-
-    .comments-monkey{
-        overflow-x: scroll;
-        width: 100%;
-        display: flex;
-        overflow-x: auto;
-    }
-
-    .marta-container{
-        flex: 0 0 280px;
-    } */
-
     .footer-first{
         gap: 50px;
         margin: 0;
@@ -1302,11 +1290,40 @@ footer{
         order: 4;
     }
 
+    .social-ul li{
+        width: 40px;
+        height: 40px;
+    }
+
+    .social-footer svg{
+        width: 30px;
+    }
+
     .logo-footer-hide{
         width: 12vw;
         order: 1;
     }
     .logo-footer-hide img{
         width: 12vw;
+    }
+
+    .looking-job{
+        display: none;
+    }
+
+    .become-div, 
+    .work-div{
+        display: block;
+    }
+
+    .become-div{
+        font-size: 1.4rem;
+        color: var(--color-monkeys);
+    }
+
+    .work-div a{
+        text-decoration: none;
+        color: white;
+        font-size: 1.3rem;
     }
 }
