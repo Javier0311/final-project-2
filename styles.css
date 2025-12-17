@@ -606,8 +606,18 @@ main{
 
 /* Comments monkey Section */
 
+.sr-only{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+    border-width: 0;
+}
+
 .comments-monkey{
-    max-width: auto;
     margin: 0 auto;
     padding: 20px;
     overflow: hidden;
@@ -617,13 +627,9 @@ main{
     display: flex;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
-    -ms-overflow-style: none;
+
     scrollbar-width: none;
     gap: 30px;
-}
-
-.comments-container::-webkit-scrollbar {
-    display: none;
 }
 
 .marta-container{
@@ -798,7 +804,7 @@ footer{
 }
 
 .footer-first{
-    background-color: #000305;
+    background-color: black;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -973,7 +979,7 @@ footer{
     justify-content: center;
 }
 
-/* Tablet Version 550px */
+/* Tablet Version 600px */
 
 @media  (min-width: 600px) {
 
@@ -1175,6 +1181,13 @@ footer{
 
 /* Comments monkey Section */
 
+    .comments-container{
+        gap: 30px;
+    }
+
+    .marta-container{
+        width: 45vw;
+    }
 
 /* Footer section */
 
@@ -1332,5 +1345,13 @@ footer{
         text-decoration: none;
         color: white;
         font-size: 1.3rem;
+    }
+
+    .comments-container{
+        gap: 10px;
+    }
+
+    .marta-container{
+        width: 19vw;
     }
 }

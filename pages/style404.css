@@ -30,6 +30,7 @@ body{
     gap: 20px;
 }
 
+
 .first-p{
     font-size: 2rem;
     line-height: 1;
@@ -38,6 +39,11 @@ body{
 
 .second-p{
     font-size: 1.2rem;
+}
+
+.first-p + .second-p {
+    margin-top: 10px;
+    color: #585858;
 }
 
 .search-div{
@@ -124,7 +130,7 @@ form{
 input[type="file"]::file-selector-button {
     width: 150px; 
     height: 40px; 
-    background-color: steelblue;
+    background-color: black;
     color: white;
     border: none;
     padding: 5px 10px;
