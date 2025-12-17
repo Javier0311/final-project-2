@@ -1,3 +1,12 @@
+:root{
+    --color-monkeys: #f7ba26;
+}
+
+body{
+    background-color: black;
+    overflow-x: hidden;
+}
+
 .section-404{
     padding-top: 10dvh;
     display: flex;
@@ -47,3 +56,117 @@
     width: 35px;
     fill: white;
 }
+
+.title-form{
+    display: flex;
+    padding-top: 12dvh;
+    margin: 0 9vw;
+    margin-bottom: 20px;
+    color: white;
+    justify-content: center;
+}
+
+.title-form h1{
+    text-align: center;
+}
+
+.img-back-form{
+    overflow-x: hidden;
+    position: absolute;
+    z-index: -1;
+    height: 1125px;
+}
+
+.img-back-form img{
+    transform: translate(-3vw, -3vw);
+    object-fit: cover;
+    width: 2000px;
+    /* height: 1200px; */
+  
+}
+
+.form-div{
+    display: flex;
+    justify-content: center;
+    z-index: -100;
+    margin-bottom: 140px;
+}
+
+form{
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.553); 
+    backdrop-filter: blur(10px); 
+    width: 85vw;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 15px;
+}
+
+.div-inside{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.div-inside label{
+    height: 20px;
+}
+
+.div-inside select{
+    padding: 5px;
+    height: 30px;
+    font-size: 1rem;
+    font-weight: 100;
+    color: rgb(62, 62, 62);
+}
+
+input[type="file"]::file-selector-button {
+    width: 150px; 
+    height: 40px; 
+    background-color: steelblue;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+button[type="submit"]{
+    background-color: var(--color-monkeys);
+    color: black;
+    border: 0;
+    border-radius: 30px;
+    height: 40px;
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+@media (min-width: 550px){
+    .title-form h1{
+        font-size: 4rem;
+        margin: 0 3vw;
+    }
+}
+
+@media (min-width: 850px){
+    .title-form{
+        margin-left: 50vw;
+        margin-right: 2vw;
+    }
+
+    .title-form h1{
+        margin: 0;
+        text-align: center;
+        font-size: 3.5rem;
+    }
+
+    .form-div{
+        justify-content: end;
+    }
+
+    form{
+        margin-right: 20px;
+        width: 50vw;
+    }
+}
+

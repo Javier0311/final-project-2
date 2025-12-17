@@ -6,6 +6,7 @@
     <title>Trabaja para Nosotros - Monkey Food</title>
 
     <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="./style404.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -61,7 +62,73 @@
         </nav>
     </header>
 
-    <h1>¿Quieres trabajar en nuestra selva?</h1>
+    <div class="img-back-form">
+        <img src="../images/background-form.jpg" alt="monkey background">
+    </div>
+
+    <div class="title-form">
+        <h1>¿Quieres trabajar en nuestra selva?</h1>
+    </div>
+    <div class="form-div">
+
+        <form>
+
+            <div class="div-inside">
+                <label for="city-work">¿En qué ciudad te gustaría trabajar?</label>
+                <select name="city-work" id="city-work">
+                    <option value="">Huelva</option>
+                    <option value="">Sevilla</option>
+                    <option value="">Badajoz</option>
+                </select>
+            </div>
+
+            <div class="div-inside">
+                <label for="time-work">¿Te gustaría trabajar a tiempo completo o a tiempo parcial?</label>
+                <select name="time-work" id="time-work">
+                    <option value="">Tiempo completo</option>
+                    <option value="">Tiempo parcial</option>
+                </select>
+            </div>
+
+            <div class="div-inside">
+                <label for="rol-work">¿Dónde quieres trabajar?</label>
+                <select name="rol-work" id="rol-work">
+                    <option value="">Sala</option>
+                    <option value="">Cocina</option>
+                    <option value="">Ambas</option>
+                </select>
+            </div>
+
+            <div class="div-inside">
+                <label for="experience-work">¿Tienes experiencia en hostelería?</label>
+                <select name="experience-work" id="experience-work">
+                    <option value="">Si, genial</option>
+                    <option value="">No, no pasa nada</option>
+                </select>
+            </div>
+
+            <div class="div-inside">
+                <label for="tech-behavior">¿Cómo te llevas con la tecnología?</label>
+                <select name="tech-behavior" id="tech-behavior">
+                    <option value="">Genial</option>
+                    <option value="">Bien</option>
+                    <option value="">Regular</option>
+                    <option value="">Mal</option>
+                </select>
+            </div>
+
+            <div class="div-inside">
+                <label for="resume-input">Déjanos tu currículum</label>
+                <input type="file" id="resume-input">
+            </div>
+            <div class="div-inside-check">
+                <input type="checkbox">
+                <label for="">Sí, estoy de acuerdo con la <strong>política de privacidad</strong> y <strong>condiciones generales</strong>.</label>
+            </div>
+
+            <button type="submit">Enviar mensaje</button>
+        </form>
+    </div>
 
     <footer>
         <div class="footer-first" style="background-color: black;">
@@ -153,7 +220,7 @@
                 <ul>
                     <li><a href="#">CONTACTO</a></li>
                     <li>|</li>
-                    <li><a href="#">ALERGENOS</a></li>
+                    <li><a href="#">FAQ</a></li>
                     <li>|</li>
                     <li><a href="#">COSAS LEGALES</a></li>
                 </ul>
