@@ -1,0 +1,49 @@
+.section-404{
+    padding-top: 10dvh;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 3vw;
+    column-gap: 20px;
+    row-gap: 5vw;
+    justify-content: center;
+}
+
+.section-404 h1{
+    color: rgb(168, 168, 168);
+    font-size: 9rem;
+    font-weight: 100;
+}
+
+.div-group{
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.first-p{
+    font-size: 2rem;
+    line-height: 1;
+    font-weight: 800;
+}
+
+.second-p{
+    font-size: 1.2rem;
+}
+
+.search-div{
+    display: flex;
+}
+
+.search-div input{
+    height: 35px;
+    padding: 5px;
+    width: 100%;
+}
+
+.search-div svg{
+    background-color: black;
+    padding: 5px;
+    width: 35px;
+    fill: white;
+}
