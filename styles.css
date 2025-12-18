@@ -759,12 +759,20 @@ main{
     justify-content: space-between;
     margin-top: 60px;
 }
+.p-section-looking{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-self: center;
+}
 
 .looking-job div:first-child{
     padding: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-self: center;
+    align-self: center;
 }
 
 .looking-job p{
